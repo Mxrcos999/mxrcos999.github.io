@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <div class="anima">
+    <div class="header">
+        <div><h3>Portfolio</h3></div>
+        
+        <div class="menu">
+            <li><a href="#ancoraSobre">Sobre</a></li>
+            <li><a href="#ancoraProjetos">Projetos</a></li>
+            <li><a href="#ancoraContato">Contato</a></li>
+        </div>
+    </div>
+   
+    <div class="apresentacao">
+        <div class="txt-apresent">
+            <h2 id="hello">Hello, world!</h2>
+            <h3>Marcos Felipe,<br>desenvolvedor fullStack</h3>
+            <a href="#ancoraProjetos" class="btn">Conheça meus projetos</a>
+        </div>
+        
+        <img src="img/kisspng-html-responsive-web-design-web-development-softwar-coder-transparent-png-5a756d8e097f52.3199091515176451980389.png" alt="">
+    </div>
+</div>
+    <div class="sobre">
+        <div class="text-sobre" id="ancoraSobre" data-anime="right">
+            <h1>Sobre mim</h1>
+            <p >Olá, mundo!<br>Meu nome é Marcos Felipe Celestino, sou um desenvolvedor Fullstack apaixonado por tecnologia! Entrei na área em 2019 e em 2020 comecei no mundo da programação, no momento estou cursando Desenvolvimento de sistemas e pretendo futuramente me formar em engenharia de software! Tenho experiencia com desenvolvimento web e conhecimento em algumas tecnologias para desenvolvimento de sistemas</p>
+        </div>
+        <div>
+            <img src="img/imgHe.png" data-anime="left" alt="">
+        </div>
+   </div>
+ <div class="projetos">
+        <h2 id="ancoraProjetos">Principais projetos</h2>
+        <div class="menuProjetos">
+            <button id="btnProjeto" onclick="mudaCardWeb()">Desenvolvimento Web</button>
+            <button id="btnProjeto"onclick="mudacard()">Desenvolvimento Java</button>
+        </div>
+        <div class="web" id='web'>
+
+            <div class="card">
+                <img id="img" src="img/clever.png" alt="">
+               
+                    <h3 id="titulo">Escola Clever</h3>
+                    <p id="p">Site de uma escola ficticia desenvolvido para um desafio. Tecnologias utilizadas: HTML5, CSS3, JavaScript, Jquery</p>
+                    <a href="https://escola-clever.000webhostapp.com" target="_blank">Visitar</a>
+            </div>
+
+           <div class="card">
+               <img src="img/pontos-turisticos.png" alt="">
+                    <h3>pontos turisticos</h3>
+                    <p> Site de uma empresa ficticia de turismos, tecnologias utilizadas: HTML5, CSS3, JavaScript, Bootstrao</p>
+                    <a href="https://pontosturisticosdw.000webhostapp.com/index.html" target="_blank">Visitar</a>
+            </div>
+
+           <div class="card">
+                <img src="img/paintball.png" alt="">
+                    <h3>Paintball</h3>
+                    <p>Site vendido para um campo de paintball, tecnologias utilizadas: HTML5, CSS3, JavaScript, PHP</p>
+                    <a href="https://www.paintballrp.com" target="_blank">Visitar</a>
+           </div>
+
+            <div class="card">
+                <img src="img/flexturismo.png" alt="">
+                    <h3>Flex Turismo</h3>
+                    <p>SIte desenvolvido para por em prática minhas habilidades com FlexBox, Tecnologias utlizadas: HTML5 e CSS3</p>
+                    <a href="https://flexturismo.000webhostapp.com" target="_blank">Visitar</a>
+            </div>
+
+          </div>
+  </div>
+  <div class="java " id="java">
+
+    <div class="card">
+        <img id="img" src="img/bancos.png" alt="">
+       
+            <h3 id="titulo">Cadastro de dados Bancarios</h3>
+            <p id="p">Sistema de cadastro de pessoas fisicas em juridicas. Tecnologias utilizadas: Java, SQL</p>
+            <a href="https://github.com/Mxrcos999/CrudsJava/tree/main/Bancos" target="_blank">Visitar</a>
+    </div>
+
+   <div class="card">
+        <img id="img" src="img/meetap.png" alt="">
+        
+        <h3 id="titulo">Cadastro de eventos</h3>
+        <p id="p">Sistema de cadastro de eventos feito para web. Tecnologias utilizadas, XHTML, CSS3, Java, JSF (primeFaces) e SQL</p>
+        <a href="https://github.com/Mxrcos999/CrudsJava/tree/main/meetapp" target="_blank">Visitar</a>
+    </div>
+
+   <div class="card">
+         <img id="img" src="img/pontodeacesso.jpeg" alt="">
+       
+          <h3 id="titulo">Controle de ponto de acesso</h3>
+          <p id="p"> Sistema de controle de ponto de acesso, Desenvolvido com Java, SpringBoot e JPA</p>
+           <a href="https://github.com/Mxrcos999/CrudsJava/tree/main/live" target="_blank">Visitar</a>
+   </div>
+
+   
+
+  </div>
+</div>
+<div class="tituloContato">
+    <h2 >Entre em contato</h2>
+</div>
+  <div class="contato" id="ancoraContato">
+    
+      <img src="img/contato.png" alt="">
+      <form action="processa.php" method="POST" name="formContato">
+        
+        <label for="">Nome</label>
+        <input type="text" name="nome" id="nome" class="inputs" placeholder="Digite seu nome:">
+        <label for="">Email</label>
+        <input type="email" name="email" class="inputs" required placeholder="Digite seu Email:">
+        <label for="">Mensagem</label>
+        <textarea name="mensagem" id="" cols="30" rows="10" id="mensagem" placeholder="Digite sua mensagem:"></textarea>
+        <input onclick="validaForm()" class="envia" type="submit">
+      </form>
+    
+  </div>
+  <footer>
+      <div class="rodape">
+          <p>Desenvolvido por Marcos Felipe Celestino</p>
+          <p>Email: Marcosfelipehd3@gmail.com</p>
+      </div>
+      <div class="icons">
+        <a href="https://github.com/Mxrcos999" target="_blank"> <i class="fab fa-github"></i></a> 
+        <a href="https://www.linkedin.com/in/marcos-felipe-2528a5158/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+  </footer>
+  
+</body>
+<script src="js/script.js"></script>
+</html>
